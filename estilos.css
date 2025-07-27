@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Century, sans-serif; 
+    line-height: 1.6;
+    color: #333;
+    background: #2A7B9B;
+    background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+}
+
+.contenedor { 
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.header { 
+    background-color: #fff;
+    background: #79b3c9;
+    background: linear-gradient(90deg, rgba(121, 179, 201, 1) 0%, rgba(138, 222, 173, 1) 50%, rgba(247, 236, 134, 0.84) 100%);
+}
+
+.header .contenedor { 
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 20px;
+    grid-template-areas:
+        "logo-area nav-area search-area";
+}
+
+.logo-section {
+    grid-area: logo-area;
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.logo-section img {
+    height: 60px;
+    width: auto;
+}
+
+.logo-section .logo-text a {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333; 
+    line-height: 1.2; 
+}
+
+.logo-section .logo-text span {
+    display: block; 
+}
+
+.nav { 
+    grid-area: nav-area;
+    justify-self: center; 
+    display: flex; 
+    gap: 20px;
+}
+
+.nav a { 
+    padding: 10px 0;
+    display: block;
+    font-weight: bold;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #007bff;
+}
+
+.search-container{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.search-container input[type="text"]{
+    padding: 10px;
+    width: 50%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.search-container button{
+    padding: 10px 15px;
+    background-color:#007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: poniter;
+    font-size: 16px;
+}
+
+.search-container button:hover{
+    background-color: orange;
+    transition: 0.3s;
+} 
+}
+
+main {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.service-details {
+    margin-top: 50px; 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px; 
+    justify-items: center; 
+    align-items: center; 
+}
+
+.localizacion,
+.horario,
+.chat,
+.numero {
+    background-color: #FEEFAD; 
+    border-radius: 15px; 
+    padding: 40px 30px; 
+    width: 100%; 
+    max-width: 350px; 
+    min-height: 200px; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+}
+
+.localizacion h3,
+.horario h3,
+.chat h3,
+.numero h3 {
+    font-size: 2.2em; 
+    color: #333; 
+    margin: 0; 
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.7);
+}
+
+@media (max-width: 768px) {
+    .header .contenedor {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "logo-area"
+            "nav-area"
+            "search-area";
+        justify-items: center;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .buscar {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .buscar input {
+        width: 100%;
+    }
+
+    .service-details {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+    }
+
+    .localizacion,
+    .horario,
+    .chat,
+    .numero {
+        min-height: 180px; 
+        padding: 30px 20px; 
+    }
+
+    .localizacion h3,
+    .horario h3,
+    .chat h3,
+    .numero h3 {
+        font-size: 1.8em; 
+    }
+}

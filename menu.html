@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Sabores de mi Tierra - Menú</title>
+<link rel="stylesheet" href="menu.css" />
+<script src="funcion.js" defer></script>
+</head>
+<body>
+
+<header>Sabores de mi Tierra</header>
+
+<nav>
+  <button onclick="location.href='acerca.html'">Acerca de</button>
+  <button onclick="location.href='menu.html'">Menú</button>
+  <button onclick="location.href='redes-sociales.html'">Redes Sociales</button>
+  <button onclick="location.href='servicios.html'">Servicios</button>
+</nav>
+
+<main>
+
+  <div id="busquedaContainer" style="margin-bottom: 20px; text-align: center;">
+    <input
+      type="text"
+      id="busquedaInput"
+      placeholder="Buscar platillos..."
+      style="padding: 10px; width: 70%; max-width: 400px; border-radius: 10px; border: 2px solid #d2691e; font-size: 1rem;"
+    />
+    <button
+      onclick="buscarPlatillos()"
+      style="padding: 10px 20px; margin-left: 10px; border-radius: 10px; background-color: #d2691e; color: white; border: none; cursor: pointer; font-weight: 600;"
+    >
+      Buscar
+    </button>
+  </div>
+
+  <section class="info-box info-1 menu-item">
+    <h2>Pepián</h2>
+    <div class="menu-content">
+     <img src="https://aprende.guatemala.com/wp-content/uploads/2016/11/pepian-guaemalteco-preparacion.jpg" width="350"
+      height="225">
+      <p>Estofado tradicional guatemalteco de carne (pollo o res) con una rica salsa a base de tomate, chiles y especias.</p>
+    </div>
+  </section>
+
+  <section class="info-box info-2 menu-item">
+    <h2>Kak'ik</h2>
+    <div class="menu-content">
+    <img src="https://www.chapintv.com/wp-content/uploads/2024/01/receta-tradicional-kakik-guatemalteco.jpg" width="350"
+      height="225">
+      <p>Sopa roja picante hecha con pavo, chile, hierbas y especias mayas, muy popular en la región alta.</p>
+    </div>
+  </section>
+
+  <section class="info-box info-3 menu-item">
+    <h2>Jocon</h2>
+    <div class="menu-content">
+     <img src="https://aprende.guatemala.com/wp-content/uploads/2016/10/jocon-al-estilo-chapin.webp" width="350"
+      height="225">
+      <p>Platillo a base de pollo cocido en una salsa verde cremosa preparada con tomatillos, cilantro y chile.</p>
+    </div>
+  </section>
+
+  <section class="info-box info-4 menu-item">
+    <h2>Hilachas</h2>
+    <div class="menu-content">
+      <img src="https://alba-gt-chapintv.cdn.mediatiquepress.com/wp-content/uploads/2024/09/como-preparar-hilachas-guatemaltecas-receta-tradicional-1-1024x530.jpg" width="350"
+      height="225">
+      <p>Carne deshebrada en salsa de tomate, con verduras y especias, acompañada de arroz y tortillas.</p>
+    </div>
+  </section>
+
+  <section class="info-box info-1 menu-item">
+    <h2>Tapado</h2>
+    <div class="menu-content">
+      <img src="https://www.atastefortravel.ca/wp-content/uploads/2018/01/Tapado-Garifuna-Caribbean-seafood-soup-with-coconut-milk-yucca-and-plantain-.jpg" width="350" 
+      height="225">
+      <p>Guiso de mariscos con leche de coco, verduras, plátano y especias, típico de la costa caribeña.</p>
+    </div>
+  </section>
+
+  <section class="info-box info-2 menu-item">
+    <h2>Rellenitos de Plátano</h2>
+    <div class="menu-content">
+      <img src="https://zestysouthindiankitchen.com/wp-content/uploads/2017/03/Rellenitos-de-platano-3.jpg" width="350"
+      height="225">
+      <p>Plátanos machacados rellenos de frijol dulce, fritos hasta dorar, un postre tradicional guatemalteco.</p>
+    </div>
+  </section>
+</main>
+
+</body>
+</html>
+
+
+
