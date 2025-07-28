@@ -1,46 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Pacifico&display=swap');
+
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f4f4;
   margin: 0;
-  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f3e9dc;
+  color: #4a3c31;
+}
+
+header {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background-color: #d2691e;
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-family: 'Pacifico', cursive;
+  font-size: 1.8rem;
+  color: white;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  z-index: 1000;
 }
 
 nav {
-  background-color: #8B0000;
-  padding: 10px 20px;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  position: fixed;
+  top: 15px;
+  right: 15px;
   display: flex;
-  gap: 20px;
+  gap: 15px;
+  z-index: 1000;
 }
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
-}
-
-.contenedor-imagen {
-  width: 80%;
-  max-width: 800px;
-  margin: 80px auto;
-  background-color: white;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  text-align: center;
-}
-
-.contenedor-imagen img {
-  max-width: 100%;
-  height: auto;
+nav button {
+  background-color: #fff8f0;
+  border: 2px solid #d2691e;
   border-radius: 10px;
+  padding: 10px 16px;
+  font-weight: 600;
+  color: #d2691e;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav button:hover {
+  background-color: #d2691e;
+  color: white;
+}
+
+main {
+  padding: 100px 20px 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Cuadro único */
+.info-box {
+  border-radius: 15px;
+  padding: 25px 30px;
+  margin-bottom: 25px;
+  color: #3e2e1a;
+  font-size: 1.1rem;
+  box-shadow: 3px 3px 8px rgba(0,0,0,0.1);
+}
+
+.info-1 {
+  background-color: #f7d6b3;
+}
+
+/* Imagen con bordes redondeados */
+.imagen-destacada {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 15px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.15);
 }
